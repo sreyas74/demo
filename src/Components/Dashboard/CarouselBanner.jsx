@@ -19,6 +19,7 @@ function CarouselBanner() {
         prevIcon={false}
         nextIcon={false}
         controls={false}
+        indicators={false}
         interval={3000}
       >
         <Carousel.Item

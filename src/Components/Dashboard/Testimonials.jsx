@@ -96,7 +96,7 @@ function Testimonials() {
 
       <div className={styles.CustomerReviews}>
         <h4>What our Customers are saying</h4>
-        <Carousel activeIndex={index} onSelect={handleSelect} interval={500000}>
+        <Carousel activeIndex={index} onSelect={handleSelect} interval={500000} indicators={false}>
           <Carousel.Item>
             <h5>SURYA GVS</h5>
           </Carousel.Item>

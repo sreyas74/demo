@@ -19,6 +19,7 @@ function CarouselBanner() {
         prevIcon={false}
         nextIcon={false}
         controls={false}
+        indicators={false}
         interval={3000}
       >
         <Carousel.Item
@@ -26,7 +27,7 @@ function CarouselBanner() {
           style={{ backgroundColor: "#FFF7E2" }}
         >
           <img
-            src="https://raw.githubusercontent.com/sreyas74/trysample-/6240c3b770ba49fb28459ed52541fa076d8793f1/a%20man%20ride%20a%20adventure%20bike%20at%20himalayas.jpg"
+            src="https://github.com/sreyas74/trysample-/blob/main/bike1%20(1).jpg?raw=true"
             alt="First slide"
           />
         </Carousel.Item>

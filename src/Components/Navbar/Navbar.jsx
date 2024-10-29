@@ -121,7 +121,7 @@ function Navbar() {
       <div className={styles.Navbar__Button__Info}>
     
         <button onClick={() => history.push("/subscription")} style={{ position: 'relative', left: '150px' }}>RydeUp</button>
-        <button style={{ position: 'relative', left: '150px' }}>How it works</button>
+        <button onClick={() => history.push("/trial")}style={{ position: 'relative', left: '150px' }}>How it works</button>
         <button style={{ position: 'relative', left: '150px' }}>FAQs</button>
         {!toggleLogin ? (
           <>
@@ -139,7 +139,7 @@ function Navbar() {
               }}
             >
               <Fade in={openLogin}>
-                <div className={classes.paper}>
+                <div className={classes.papser}>
                   <h4 id="transition-modal-title">Login</h4>
                   <div className={classes.inputs}>
                     <TextField
