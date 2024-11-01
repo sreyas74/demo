@@ -120,8 +120,8 @@ function Navbar() {
       
       <div className={styles.Navbar__Button__Info}>
     
-        <button onClick={() => history.push("/subscription")} style={{ position: 'relative', left: '150px' }}>RydeUp</button>
-        <button onClick={() => history.push("/trial")}style={{ position: 'relative', left: '150px' }}>How it works</button>
+        <button onClick={() => history.push("/sample")} style={{ position: 'relative', left: '150px' }}>RydeUp</button>
+        <button onClick={() => history.push("/trail")}style={{ position: 'relative', left: '150px' }}>How it works</button>
         <button style={{ position: 'relative', left: '150px' }}>FAQs</button>
         {!toggleLogin ? (
           <>

@@ -10,6 +10,8 @@ import { SubscriptionPage } from "../Pages/subscription/MainPart/SubscriptionPag
 import { Payment } from "../Pages/SubscriptionPay/MainPage/Payment";
 import { FinalPayment } from "../Pages/payment/FinalPayment";
 import Profile from "../Pages/Profile/Profile";
+import Trail from "../Pages/Dashboard/Trail";
+import Sample from "../Pages/Dashboard/Sample";
 
 const Routes = () => {
   return (
@@ -18,9 +20,16 @@ const Routes = () => {
         <Route exact path="/">
           <Dashboard />
         </Route>
+        <Route exact path="/sample">
+        <Sample/>
+        </Route>
         <Route exact path="/open">
           <Open />
         </Route>
+        <Route exact path="/trail">
+          <Trail />
+        </Route>
+       
         <PrivateRoute exact={true} path="/cars/:location">
           <RentalSec />
         </PrivateRoute>
