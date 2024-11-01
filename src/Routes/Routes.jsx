@@ -13,6 +13,7 @@ import Profile from "../Pages/Profile/Profile";
 import Trail from "../Pages/Dashboard/Trail";
 import Sample from "../Pages/Dashboard/Sample";
 
+
 const Routes = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ const Routes = () => {
         <Route exact path="/">
           <Dashboard />
         </Route>
+      
         <Route exact path="/sample">
         <Sample/>
         </Route>

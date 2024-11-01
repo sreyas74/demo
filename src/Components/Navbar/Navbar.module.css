@@ -38,7 +38,7 @@
 
 .Navbar__Button__Info > button:hover,
 .Navbar__Button__Cars > button:hover {
-  color: rgb(28, 171, 162);
+  color: #f39323;
 }
 .Login__DropDown {
   position: absolute;
