@@ -27,7 +27,7 @@ function CarouselBanner() {
           style={{ backgroundColor: "#FFF7E2" }}
         >
           <img
-            src="https://www.revv.co.in/assets/RentalImages/HomeScreen/heroCarousel/ST_Desktop_2_FG_CD_New.webp"
+            src="https://github.com/sreyas74/trysample-/blob/main/bike1%20(1).jpg?raw=true"
             alt="First slide"
           />
         </Carousel.Item>

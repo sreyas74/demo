@@ -12,6 +12,7 @@ import { FinalPayment } from "../Pages/payment/FinalPayment";
 import Profile from "../Pages/Profile/Profile";
 import Trail from "../Pages/Dashboard/Trail";
 import Sample from "../Pages/Dashboard/Sample";
+import process from "../Components/Dashboard/Process"
 
 
 const Routes = () => {
@@ -21,6 +22,7 @@ const Routes = () => {
         <Route exact path="/">
           <Dashboard />
         </Route>
+        
       
         <Route exact path="/sample">
         <Sample/>
