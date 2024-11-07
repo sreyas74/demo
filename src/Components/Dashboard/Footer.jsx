@@ -43,7 +43,7 @@ function Footer() {
             <img src="https://raw.githubusercontent.com/sreyas74/trysample-/68ba0ecbb2e84573d79bca868624b3a6f41c9662/og%20logo%20(14).svg" alt="logo" />
           </div>
           <div className={styles.Footer__Bottom__Column__Mid}>
-            <button>
+          <button>
               <img
                 src="https://raw.githubusercontent.com/sreyas74/trysample-/80516b97c81f9b28ee63ea1b8642fe2aba61b9e2/download%20(1).svg"
                 alt="facebook"
