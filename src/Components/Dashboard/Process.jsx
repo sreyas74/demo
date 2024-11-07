@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./Process.module.css";
 function Process() {
   return (
-    <div className={styles.Process}>
+    <div id="howitworks" className={styles.Process}>
       <h3>How it works</h3>
       <div className={styles.Process__Circle__Container}>
         <div>

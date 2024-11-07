@@ -1,6 +1,11 @@
+html {
+  scroll-padding-top: 100px; /* Adjust to match the height of your navbar */
+}
+
 .Container {
   background-image: linear-gradient(#ffffff, #f6f6f6);
   padding: 5%;
+  margin-top: 20px;
 }
 .Container__Top {
   display: flex;
@@ -33,3 +38,4 @@
   top: -55%;
   left: 11%;
 }
+
