@@ -51,7 +51,7 @@ function Footer() {
             </button>
             <button>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/1e5ab96612972602c56b014d7e16e9df30bfb846/instagram-logo-facebook-2-svgrepo-com.svg"
+                src="https://raw.githubusercontent.com/sreyas74/trysample-/ec7015115814a791d52cb2e491a8708122b071eb/icons8-instagram-logo-512.svg"
                 alt="instagram"
               />
             </button>
@@ -88,7 +88,7 @@ function Footer() {
           <h5>24/7 Customer Support</h5>
           <br />
           <h4 className={styles.GreenFont}>Contact Us</h4>
-          <h4 className={styles.GreenFont}>+91-9250035555</h4>
+          <h4 className={styles.GreenFont}>+91-9485555533</h4>
           <h4 className={styles.GreenFont}> care@revv.co.in</h4>
         </div>
       </div>
