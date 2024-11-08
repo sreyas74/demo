@@ -3,7 +3,7 @@ import styles from "./HowItWorks.module.css";
 function HowItWorks() {
   return (
     <div className={styles.Container}>
-      <div className={styles.Container__Top}>
+      <div id="howitworks" className={styles.Container__Top}>
         <h3>How it works</h3>
         <p>
           Call <b>+91-8860035555</b> to know more
