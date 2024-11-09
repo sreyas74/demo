@@ -3,11 +3,7 @@ import styles from "./HowItWorks.module.css";
 function HowItWorks() {
   return (
     <div className={styles.Container}>
-<<<<<<< HEAD
-      <div  id="howitworks" className={styles.Container__Top}>
-=======
       <div id="howitworks" className={styles.Container__Top}>
->>>>>>> a55f96ab1f5c7f9472bdc33be770ab55cb48f78c
         <h3>How it works</h3>
         <p>
           Call <b>+91-8860035555</b> to know more
