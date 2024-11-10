@@ -15,8 +15,8 @@ function Dashboard() {
     
       <Navbar />
       <CarouselBanner />
-      <Process />
       <Testimonials />
+      <Process />
       <Footer />
       <Last />
     </div>
