@@ -5,7 +5,6 @@ import Footer from "../../Components/Dashboard/Footer";
 import Last from "../../Components/Dashboard/Last";
 import Process from "../../Components/Dashboard/Process";
 import Testimonials from "../../Components/Dashboard/Testimonials";
-
 import Navbar from "../../Components/Navbar/Navbar";
 import styles from "./Dashboard.module.css";
 
