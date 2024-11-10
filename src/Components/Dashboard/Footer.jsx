@@ -1,6 +1,33 @@
 import React from "react";
 import styles from "./Footer.module.css";
+
+// Remove useHistory import since it's not being used
+// import { useHistory } from 'react-router-dom';
+
 function Footer() {
+  // No need to define history as it's not used
+  // let history = useHistory();
+
+  const handleFacebookClick = () => {
+    window.open("https://www.facebook.com/rydeeasy/", "_blank");
+  };
+
+  const handleInstagramClick = () => {
+    window.open("https://www.instagram.com/ryde_easy/", "_blank");
+  };
+
+  const handleXClick = () => {
+    window.open("https://x.com/RydeEasy/", "_blank");
+  };
+
+  const handleYoutubeClick = () => {
+    window.open("https://www.youtube.com/channel/UCj0R6qHnCVQnTcNe1LT3NKw", "_blank");
+  };
+
+  const handlelinkedinClick = () => {
+    window.open("https://x.com/RydeEasy/status/1368815073800687617", "_blank");
+  }
+
   return (
     <div className={styles.Footer}>
       <div className={styles.Footer__Top}>
@@ -43,33 +70,33 @@ function Footer() {
             <img src="https://raw.githubusercontent.com/sreyas74/trysample-/68ba0ecbb2e84573d79bca868624b3a6f41c9662/og%20logo%20(14).svg" alt="logo" />
           </div>
           <div className={styles.Footer__Bottom__Column__Mid}>
-          <button>
+            <button onClick={handleFacebookClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/80516b97c81f9b28ee63ea1b8642fe2aba61b9e2/download%20(1).svg"
+                src="https://raw.githubusercontent.com/sreyas74/trysample-/e88de68fb4786086033c8dff46b96efd546a4b41/fb%2029.svg"
                 alt="facebook"
               />
             </button>
-            <button>
+            <button onClick={handleInstagramClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/ec7015115814a791d52cb2e491a8708122b071eb/icons8-instagram-logo-512.svg"
+                src="https://raw.githubusercontent.com/sreyas74/trysample-/b319b14a208a3c0857c92823da4eb2a5ec1ec812/instu%20(1).svg"
                 alt="instagram"
               />
             </button>
-            <button>
+            <button onClick={handleXClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/a0175e5d0e76645da2ffd79d79c16a1a66831bda/X%20Twitter%20logo%20PNG%2C%20vector%20files%20free%20download%20-%20Brandlogos_net%20makelogos.svg"
-                alt="twitter"
+                src="https://raw.githubusercontent.com/sreyas74/trysample-/86176a16775447d9c0593e4c7ed31fdab4269928/twituu%20(1).svg"
+                alt="x"
               />
             </button>
-            <button>
+            <button onClick={handleYoutubeClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/44960de433f6e9613cbd6a14321ca67d6c1c76bc/YYuuu.svg"
+                src="https://raw.githubusercontent.com/sreyas74/trysample-/100512e81f82d1d8223b7c01379255fd2abb9f26/yyyu1%20(1).svg"
                 alt="youtube"
               />
             </button>
-            <button>
+            <button onClick={handlelinkedinClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/ee68485263f463330cad8b110fe341fe1a3322f2/download%20(2).svg"
+                src="https://raw.githubusercontent.com/sreyas74/trysample-/273c70061fd0ff18ecaa88d46615e71d33ff6c04/link%20(1).svg"
                 alt="linkedin"
               />
             </button>

@@ -51,7 +51,7 @@
 .Footer__Bottom__Column__Mid > button {
   width: 46px;
   height: 46px;
-  border-radius: 100%;
+  border-radius: 50%;
   border: none;
   margin: 5px;
   background-color: grey;
