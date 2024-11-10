@@ -25,7 +25,7 @@ function Footer() {
   };
 
   const handlelinkedinClick = () => {
-    window.open("https://x.com/RydeEasy/status/1368815073800687617", "_blank");
+    window.open("https://www.linkedin.com/company/rydeeasy-selfdrive/?originalSubdomain=in", "_blank");
   }
 
   return (
