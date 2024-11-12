@@ -15,7 +15,7 @@ function Process() {
 
           <div>
             <h4>Book & Pay</h4>
-            <p>Pick your favourite car, time and place</p>
+            <p>Pick your favourite bike, time and place</p>
           </div>
         </div>
 
@@ -29,7 +29,7 @@ function Process() {
 
           <div>
             <h4>Receive</h4>
-            <p>We will deliver the car to your doorstep</p>
+            <p>We will deliver the bike to your doorstep</p>
           </div>
         </div>
 
@@ -42,8 +42,8 @@ function Process() {
           </button>
 
           <div>
-            <h4>Ride</h4>
-            <p>Enjoy your Revv self drive</p>
+            <h4>Ryde</h4>
+            <p>Enjoy your ryde with Rydeasy </p>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ function Process() {
           <div>
             <h4>Return</h4>
             <p>
-              Get the car back to your preferred return location, and we will
+              Get the bike back to your preferred return location, and we will
               take it from there
             </p>
           </div>
