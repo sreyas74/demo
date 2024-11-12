@@ -3,7 +3,7 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 45px;
   justify-content: center;
   padding: 20px;
 }
