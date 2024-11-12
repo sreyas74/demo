@@ -43,7 +43,7 @@ function Process() {
 
           <div>
             <h4>Drive</h4>
-            <p>Enjoy your Revv self drive</p>
+            <p>Enjoy your Rydeeasy self drive</p>
           </div>
         </div>
 
