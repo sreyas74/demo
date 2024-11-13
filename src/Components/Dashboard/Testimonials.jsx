@@ -1,11 +1,15 @@
 import React from 'react';
 import styles from './Testimonials.module.css';
+import wagonr from './images/wagonr.png';
+import nexon from './images/tata_nexon.png';
+import ertiga from './images/ertiga.png';
+import micra from './images/micra_bg.png';
 
 const cars = [
-    { name: 'Wagon R', imageUrl: 'https://github.com/sreyas74/demo/blob/master/maruti-suzuki-wagon-r-prime-gallent-red.png?raw=true', rate: '₹1500/day' },
-    { name: 'TATA Nexon', imageUrl: 'https://github.com/sreyas74/demo/blob/master/Luxurious_black_edition_of_Tata_Nexon_car-removebg-preview.png?raw=true', rate: '₹150/day' },
-    { name: 'Ertiga', imageUrl: 'https://github.com/sreyas74/demo/blob/master/Suzuki_Ertiga__Precios__versiones_y_equipamiento_en_M%C3%A9xico-removebg-preview.png?raw=true', rate: '₹130/day' },
-    { name: 'Nissan Micra', imageUrl: 'https://github.com/sreyas74/demo/blob/master/micra_bg.png?raw=true', rate: '₹120/day' },
+    { name: 'Wagon R', imageUrl: wagonr, rate: '₹1500/day' },
+    { name: 'TATA Nexon', imageUrl: nexon, rate: '₹150/day' },
+    { name: 'Ertiga', imageUrl: ertiga, rate: '₹130/day' },
+    { name: 'Nissan Micra', imageUrl: micra, rate: '₹120/day' },
 ];
 
 const Testimonials = () => {
