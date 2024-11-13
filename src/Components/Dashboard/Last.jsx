@@ -3,82 +3,50 @@ import style from "./Last.module.css";
 function Last() {
   return (
     <div className={style.Last}>
-      <h5>Self-Drive Car Rentals in Delhi NCR</h5>
+      <h5>Discover Kerala with Rydeeasy</h5>
       <p>
-        From its rich culture to its buzzing nightlife, from delightful street
-        food to shopping experiences, Delhi is truly the city that has
-        everything. This constantly-evolving city hosts a massive road-length
-        that is over 25,000 kilometres. With roads and highways that are
-        well-maintained and ever-expanding, it comes as no surprise then, that
-        the number of car rentals in Delhi has increased. These cars are quite
-        economical and make travelling from one destination to the next, a
-        smooth ride. Revv also offers self drive car rentals in Gurgaon and
-        Noida.
-      </p>
+      From its lush green landscapes to its bustling city life, from mouth-watering street food to unforgettable shopping experiences, Kerala truly offers the best of everything. This culturally rich state is known for its extensive and well-maintained road network, which spans across cities, towns, and beautiful rural areas. With such a vast and scenic road system, the demand for car rentals in Kerala has only grown. Rydeeasy is here to make your travel experience easy and economical with self-drive car rentals that give you the freedom to explore Kerala on your own terms.      </p>
       <h5>Places to Go</h5>
       <p>
-        Right from the moment you land at the Delhi airport, you can get a Revv
-        self-drive car rental from the airport in Delhi. From here, you can head
-        straight to your accommodation, or spend some time in Old Delhi,
-        enjoying the sights and haggling at the bazaars. Since Revv cars come
-        with affordable hourly rates, locals can use a Revv car rental Delhi to
-        enjoy day-long drives in and around the city. We’d recommend a trip to
-        Alwar to see the famous fort or the Siliserh Lake, or a delightful drive
-        to Agra to witness the beauty of the mesmerising Taj Mahal. If you’re
-        planning a longer trip, don’t worry. Revv has an attractive unlimited
-        kilometre rental option that gives you the freedom to enjoy a long drive
-        to Jaipur, Lucknow, Manali, Mussoorie, Kasol or any other destination
-        that your heart desires.
+      Whether you arrive at one of Kerala’s major airports in Kochi, Trivandrum, or Calicut, Rydeeasy offers convenient self-drive car rentals to start your journey right away. Begin by soaking in the culture of historic sites like Fort Kochi, the temples of Thrissur, or the vibrant festivals in Thiruvananthapuram. For those looking to escape into nature, we recommend a scenic drive to Munnar’s tea plantations, the beaches of Kovalam, or the peaceful backwaters of Alappuzha and Kumarakom. And if a longer road trip is calling, Rydeeasy offers an unlimited kilometer package, giving you the freedom to venture as far as the hill stations of Wayanad or the wildlife reserves of Thekkady.
       </p>
 
-      <h5>Selecting a Car</h5>
+      <h5>Selecting Your Ryde</h5>
       <p>
-        Depending on whether you’re using your Revv car to zip in and out of
-        city traffic or to cruise down highways, you can select a model that
-        fits your needs. We offer everything from convenient hatchbacks like the
-        Hyundai Grand i10 to roomy sedans like the Ford Aspire, Honda City &
-        Nissan Sunny, and even tough SUVs like the Toyota Innova Crysta and
-        Mahindra XUV.
-      </p>
-      <h5>Rent a car from Revv</h5>
+      Whether you’re weaving through the lively streets of Kerala’s cities or cruising down its winding highways, Rydeeasy has the perfect car for every journey. Choose from our compact hatchbacks, like the Maruti Swift, ideal for quick city trips, or our spacious sedans like the Honda City and Toyota Yaris for added comfort. If you're looking for a reliable, stylish SUV, the Tata Nexon is a fantastic choice with its rugged build and modern features, ideal for Kerala’s varied terrains. For those seeking an even tougher companion, the Mahindra XUV or Toyota Fortuner are also available for adventurous road trips.
+       </p>
+      <h5>Rent a Car with Rydeeasy</h5>
       <p>
-        Renting our self-drive cars in Delhi, Gurgaon or Noida is incredibly
-        easy. All you need to do is:
+      Renting a car with Rydeeasy across Kerala is easy and convenient. Just follow these steps:
+
       </p>
 
       <ul>
         <li>
-          Download the Revv app from the Apple App Store or Google Play Store
+        Download the Rydeeasy app from the Apple App Store or Google Play Store
         </li>
         <li>
-          Select your preferred car and tell us when and where you need it{" "}
-        </li>
-        <li>
-          {" "}
-          Accept delivery of the car, which will happen at the agreed upon time
-          and place
+        Select your car and choose your rental date and location{" "}
         </li>
         <li>
           {" "}
-          Turn on the ignition and get ready for an amazing adventure
+          Accept delivery of the car at the agreed time and location
+        </li>
+        <li>
+          {" "}
+          Start your Kerala adventure at your own pace
         </li>{" "}
-        <li> Let us know where we can pick up the car from</li>{" "}
+        <li> Return the car at a convenient spot as arranged</li>{" "}
         <li>
           {" "}
-          Receive an email invoice for your trip within 48 hours of the end of
-          the journey
+          Receive an email invoice for your trip within 48 hours
         </li>
-        <li> Use the app to change or cancel your booking as required</li>
+        <li> Need to adjust your travel plans? You can easily modify or cancel your booking through the Rydeeasy app</li>
       </ul>
 
-      <h5>The Revv Advantage</h5>
+      <h5>The Rydeeasy Advantage</h5>
       <p>
-        With flexible rental options and a wide network that’s visible across
-        most cities in India, renting from Revv has become the preferred choice
-        for most Delhi NCR locals. Our wide fleet of cars come with All India
-        Tourist Permits, so you needn’t worry about crossing state borders while
-        you journey across India’s roads. With Revv, renting a self-drive car is
-        affordable, easy and absolutely hassle-free!
+      With flexible rental options and a presence across Kerala, Rydeeasy brings the joy of self-drive car rentals to your fingertips. Experience the beauty of Kerala in the comfort of your own rental vehicle with Rydeeasy—your trusted travel partner.
       </p>
     </div>
   );
