@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Process.module.css";
+import Rider from "../Dashboard/images/Rider.svg";
+import Bike from "../Dashboard/images/Bike.svg";
 function Process() {
   return (
     <div id="howitworks" className={styles.Process}>
@@ -22,7 +24,7 @@ function Process() {
         <div>
           <button>
             <img
-              src="https://raw.githubusercontent.com/sreyas74/trysample-/402aea38dbfc0d74010b9f62a651cd417ba982b2/colorkit%20(1).svg"
+              src={Bike}
               alt="bike"
             />
           </button>
@@ -36,7 +38,7 @@ function Process() {
         <div>
           <button>
             <img
-              src="https://raw.githubusercontent.com/sreyas74/trysample-/e24a9696a9e061805dd23f15f761254f43c01028/Method%20Draw%20Image%20(2)%20(1).svg"
+              src={Rider}
               alt="rider"
             />
           </button>

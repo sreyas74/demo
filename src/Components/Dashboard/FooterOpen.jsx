@@ -34,14 +34,14 @@ function FooterOpen() {
         <h4>Serviceable Cities</h4>
         <div className={styles.Footer__Top__Cities}>
           <div className={styles.Footer__Top__Cities__Column}>
-            <button>Bike Rental in Kochi</button>
-            <button>Bike Rental in Aluva</button>
-            <button>Bike Rental in Ernakulam</button>
-            <button>Bike Rental in Angamaly</button>
-            <button>Bike Rental in Kakkanad</button>
-            <button>Bike Rental in Tirur</button>
-            <button>Bike Rental in Edappal</button>
-            <button>Bike Rental in Malappuram</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Kochi</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Aluva</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Ernakulam</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Angamaly</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Kakkanad</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Tirur</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Edappal</button>
+            <button style={{ position: 'relative', right: '470px'}}>Bike Rental in Malappuram</button>
           </div>
         
         

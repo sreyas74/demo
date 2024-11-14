@@ -4,21 +4,17 @@ import Button from "@material-ui/core/Button";
 import Dialog from "@material-ui/core/Dialog";
 import DialogActions from "@material-ui/core/DialogActions";
 import DialogTitle from "@material-ui/core/DialogTitle";
-import { useDispatch, useSelector } from "react-redux";
-import { useHistory } from "react-router-dom";
+import { useDispatch } from "react-redux";  // Removed useSelector as it's not being used
+import { useHistory } from "react-router-dom"; 
 import { setUserRequest } from "../../Redux/Dashboard/action";
 
 const cities = [
   { value: "Kochi", label: "Kochi" },
-  { value: "Mumbai", label: "Mumbai" },
-  { value: "Bangalore", label: "Bangalore" },
-  { value: "Chennai", label: "Chennai" },
-  { value: "Hyderabad", label: "Hyderabad" },
-  { value: "Pune", label: "Pune" },
-  { value: "Kolkata", label: "Kolkata" },
+  { value: "Tirur", label: "Tirur" },
+
 ];
 
-function Searchbox() {
+function Searchboxopen() {
   const [city, setCity] = React.useState("Kochi");
   const [start_date, setStartDate] = React.useState("");
   const [duration, setDuration] = React.useState(0);
@@ -37,14 +33,15 @@ function Searchbox() {
     }
   }, [start_date, end_date]);
 
-  React.useEffect(() => {
-    handleSubmit();
-  }, [city, start_date, end_date]);
-
-  const handleSubmit = () => {
+  // Memoize handleSubmit using useCallback to prevent unnecessary re-renders
+  const handleSubmit = React.useCallback(() => {
     const payload = { city, start_date, end_date };
     if (duration >= 0) dispatch(setUserRequest(payload));
-  };
+  }, [city, start_date, end_date, duration, dispatch]);
+
+  React.useEffect(() => {
+    handleSubmit();
+  }, [city, start_date, end_date, handleSubmit]); // Added handleSubmit to the dependencies array
 
   const handleClickOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -169,4 +166,4 @@ const getMinDate = (date) => {
   return `${date.getFullYear()}-${month}-${day}T00:00:00`;
 };
 
-export default Searchbox;
+export default Searchboxopen;
