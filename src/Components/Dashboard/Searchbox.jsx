@@ -9,8 +9,8 @@ import { useHistory } from "react-router-dom";
 import { setUserRequest } from "../../Redux/Dashboard/action";
 const cities = [
   {
-    value: "Delhi-NCR",
-    label: "Delhi-NCR",
+    value: "Kochi",
+    label: "Kochi",
   },
   {
     value: "Mumbai",
@@ -39,7 +39,7 @@ const cities = [
 ];
 
 function Searchbox() {
-  const [city, setCity] = React.useState("Delhi-NCR");
+  const [city, setCity] = React.useState("Kochi");
   const [start_date, setStartDate] = React.useState("");
   const [duration, setDuration] = React.useState(0);
   const [end_date, setEndDate] = React.useState("");

@@ -9,6 +9,8 @@ import { TextField } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { authUser, logoutUser, createUser } from "../../Redux/Auth/action";
+import logo from '../Dashboard/images/logo2.svg';
+
 
 
 
@@ -111,7 +113,7 @@ function Navbar() {
     <div className={styles.Navbar}>
       <div className={styles.Navbar__Logo}>
         <img
-          src="https://raw.githubusercontent.com/sreyas74/trysample-/ee82b1a9baae9faed7df2db279ee785a51ab7869/og%20logo%20(1).svg"
+          src={logo} 
           alt="logo"
           style={{ cursor: "pointer" }}
           onClick={() => history.push("/")}
