@@ -1,14 +1,17 @@
 // SubscriptionBenefits.jsx
 import React from 'react';
 import styles from './SubscriptionBenefits.module.css';
-import ertiga from './images/ertiga.png';
+import vespa from './images/vespa.png'
+import fascino from './images/fascino.png';
+import himalayan from './images/himalayan.png';
+import bullet from './images/bullet_350.png';
 
 
 const cars = [
-    { name: 'Vespa', imageUrl: 'https://github.com/sreyas74/demo/blob/master/Japan_s_Ten_Most_Lovable_Pocket-Sized_Kei_Cars-removebg-preview.png?raw=true', rate: '₹1500/day' },
-    { name: 'Fascino', imageUrl: ertiga, rate: '₹150/day' },
-    { name: 'Himalayan', imageUrl: '../images/wagonr.png', rate: '₹130/day' },
-    { name: 'Bullet classic', imageUrl: '/images/mercedes.jpg', rate: '₹120/day' },
+    { name: 'Vespa', imageUrl: vespa, rate: '₹1500/day' },
+    { name: 'Fascino', imageUrl: fascino, rate: '₹150/day' },
+    { name: 'Himalayan', imageUrl: himalayan, rate: '₹130/day' },
+    { name: 'Bullet classic', imageUrl: 'bullet', rate: '₹120/day' },
 ];
 
 const SubscriptionBenefits = () => {
