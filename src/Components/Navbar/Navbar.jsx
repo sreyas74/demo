@@ -130,6 +130,8 @@ function Navbar() {
 >
     How it works
 </button>
+
+<button onClick={() => history.push("/Blog")} style={{ position: 'relative', left: '150px' }}>Blog</button>
         <button style={{ position: 'relative', left: '150px' }}>FAQs</button>
         {!toggleLogin ? (
           <>

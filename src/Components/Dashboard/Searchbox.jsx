@@ -107,7 +107,7 @@ function Searchbox() {
 
       <div className={style.SearchBox__MidRow}>
         <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="Banner" />
-        <h5>Self drive car rentals in Keraka</h5>
+        <h5>Self drive car rentals in Kerala</h5>
       </div>
 
       <div className={style.SearchBox__Dropdowns}>
