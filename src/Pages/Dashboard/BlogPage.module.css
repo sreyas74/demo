@@ -1,28 +1,132 @@
-/* Image Box */
-.imageBox {
-    width: 100%;
-    max-width: 150px;
-    height: 150px;
-    overflow: hidden;
+/* Container Styling */
+.container {
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #008000; /* Green color for logo */
+  }
+  
+  .nav {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .navButton {
+    background: none;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    color: #333;
+  }
+  
+  .navButton:hover {
+    color: #FF7300;
+  }
+  
+  .appLinks {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .storeButton {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Featured Blog Section */
+  .mainContent {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f5f5f5;
+  }
+  
+  .featuredBlog {
+    display: flex;
+    gap: 2rem;
+    background-image: linear-gradient(270deg, #FF7300 0%, #FFA500 100% );
+    color: white;
+    padding: 2rem;
     border-radius: 8px;
-    margin-bottom: 15px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .imageBox:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
-  
-  .postImage {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    max-width: 1200px;
   }
   
-  .imageBox:hover .postImage {
-    transform: scale(1.1);
+  .blogInfo {
+    flex: 1;
   }
+  
+  .category {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  .title {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+  
+  .actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .readButton {
+    background-color: white;
+    color: #FF7300;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .readButton:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .readTime {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+  
+  /* Blog Image */
+  .blogImage {
+    flex: 1;
+  }
+  
+  .image {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  /* Search Bar Section */
+ 
+  
+
+  
+
+  
+ 
   
