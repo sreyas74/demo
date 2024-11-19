@@ -28,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     textAlign: "justify",
   },
   View: {
-    color: "#1CABA2",
+    color: "black",
     backgroundColor: "#fff",
     border: "1px solid lightgray !important",
     width: 150,
@@ -38,9 +38,9 @@ const useStyles = makeStyles((theme) => ({
 function FQ() {
   const classes = useStyles();
   return (
-    <div className={styles.FAQ}>
+    <div className={styles.FQ}>
       <h2>FAQs</h2>
-      <div className={styles.FAQ__List}>
+      <div className={styles.FQ__List}>
         <Accordion className={classes.Accordian}>
           <AccordionSummary
             expandIcon={<AddIcon style={{ color: "#1CABA2" }} />}
