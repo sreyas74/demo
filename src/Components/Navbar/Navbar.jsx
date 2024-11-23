@@ -48,7 +48,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 50,
     color: "white",
     width: "40%",
-    backgroundColor: "#0EBABA",
+    backgroundColor: "#FF7300",
     "&:hover": {
       color: "black",
     },
@@ -149,7 +149,16 @@ function Navbar() {
               }}
             >
               <Fade in={openLogin}>
-                <div className={classes.papser}>
+                <div className={classes.papser}
+                    style={{
+                      backgroundColor: "white",
+                      padding: "20px",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                      maxWidth: "400px", // Optional: Set a max width for the box
+                      margin: "0 auto", // Center the box horizontally
+                    }}
+                >
                   <h4 id="transition-modal-title">Login</h4>
                   <div className={classes.inputs}>
                     <TextField
