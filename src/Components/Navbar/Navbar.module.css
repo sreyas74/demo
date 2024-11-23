@@ -86,10 +86,7 @@ hr {
   font-weight: bold;
 }
 .SocialLogin > button:nth-child(1) {
-  position: relative; /* Ensure the button acts as a parent container for positioning */
   background-color: #4285F4; /* Default blue background */
-  color: #fff; /* Text color */
-  border: none;
   overflow: hidden; /* Ensures the pseudo-element stays within the button */
   border: 1px solid #4285F4;
 }
@@ -99,7 +96,7 @@ hr {
   position: absolute;
   top: 0;
   left: 0;
-  width: 13%; /* White occupies 20% of the width */
+  width: 14%; /* White occupies 20% of the width */
   height: 100%; /* Full height */
   background-color: #FFFFFF; /* White background */
 }

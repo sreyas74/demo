@@ -48,10 +48,11 @@ const useStyles = makeStyles((theme) => ({
   LoginBtn: {
     marginTop: 50,
     color: "white",
-    width: "40%",
+    width: "25%",
     backgroundColor: "#FF7300",
     "&:hover": {
-      color: "black",
+      color: "white",
+      backgroundColor: "#FFA500",
     },
   },
 }));
