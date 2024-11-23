@@ -66,7 +66,8 @@
 .SignUp > button {
   background-color: transparent;
   border: none;
-  color: rgb(28, 171, 162);
+  color: rgb(255, 115, 0)
+  ;
 }
 hr {
   margin: 0;
@@ -85,8 +86,20 @@ hr {
   font-weight: bold;
 }
 .SocialLogin > button:nth-child(1) {
-  background-color: #db4c3f;
+  background-color: #4285F4; /* Default blue background */
+  overflow: hidden; /* Ensures the pseudo-element stays within the button */
+  border: 1px solid #4285F4;
+}
+
+.SocialLogin > button:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14%; /* White occupies 20% of the width */
+  height: 100%; /* Full height */
+  background-color: #FFFFFF; /* White background */
 }
 .SocialLogin > button:nth-child(2) {
-  background-color: #3c5a96;
+  background-color: #316FF6;
 }

@@ -1,31 +1,31 @@
 // SubscriptionBenefits.jsx
 import React from 'react';
 import styles from './SubscriptionBenefits.module.css';
-import vespa from './images/vespa.png'
-import fascino from './images/fascino.png';
-import himalayan from './images/himalayan.png';
-import bullet from './images/bullet_350.png';
+import vespa from '../Dashboard/images/Vespa.jpg'
 
 
-const cars = [
+const bikes = [
     { name: 'Vespa', imageUrl: vespa, rate: '₹1500/day' },
-    { name: 'Fascino', imageUrl: fascino, rate: '₹150/day' },
-    { name: 'Himalayan', imageUrl: himalayan, rate: '₹130/day' },
-    { name: 'Bullet classic', imageUrl: 'bullet', rate: '₹120/day' },
+    { name: 'Fascino', imageUrl: '', rate: '₹150/day' },
+    { name: 'Himalayan', imageUrl: '../images/wagonr.png', rate: '₹130/day' },
+    { name: 'Bullet classic', imageUrl: '/images/mercedes.jpg', rate: '₹120/day' },
 ];
 
 const SubscriptionBenefits = () => {
     return (
-        <div className={styles.container}>
-            {cars.map((car, index) => (
-                <div className={styles.carBox} key={index}>
-                    <img src={car.imageUrl} alt={car.name} className={styles.carImage} />
-                    <div className={styles.carInfo}>
-                        <h3>{car.name}</h3>
-                        <p>{car.rate}</p>
+        <div className={styles.boxContainer}>
+            <h2 className={styles.heading}>Our Trending Bikes</h2>
+            <div className={styles.container}>
+                {bikes.map((bike, index) => (
+                    <div className={styles.bikeBox} key={index}>
+                        <img src={bike.imageUrl} alt={bike.name} className={styles.bikeImage} />
+                        <div className={styles.bikeInfo}>
+                            <h3>{bike.name}</h3>
+                            <p>{bike.rate}</p>
+                        </div>
                     </div>
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };

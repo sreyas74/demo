@@ -1,43 +1,88 @@
-/* SubscriptionBenefits.module.css */
+/* Add this at the top of your main CSS file or in the <head> of your HTML */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
 
+.heading {
+  font-family: 'Playfair Display', serif;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  padding-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+.heading::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #eb622e;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Box container with 3D effect */
+.boxContainer {
+  background: linear-gradient(145deg, white);
+  padding: 40px;
+  margin: 25px auto;
+  width: 90%;
+  max-width: 1200px;
+  border-radius: 15px;
+  border: 1px solid white;
+  box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.15), -8px -8px 15px rgba(255, 255, 255, 0.3);
+  transform: translateY(10px);
+  transition: transform 0.3s ease;
+  overflow-x: auto; /* Horizontal scroll */
+  white-space: nowrap; /* Prevents line breaks for horizontal scroll */
+}
+
+.boxContainer:hover {
+  transform: translateY(5px);
+}
+
+/* The container for the bike boxes arranged horizontally */
 .container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 45px;
-  justify-content: center;
+  display: inline-flex;
+  gap: 70px; /* Spacing between bike boxes */
   padding: 20px;
 }
 
-.carBox {
+.bikeBox {
   width: 200px;
+  display: inline-block;
   border: 1px solid #ddd;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.3s;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2), -4px -4px 8px rgba(255, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.carBox:hover {
+.bikeBox:hover {
   transform: scale(1.05);
+  box-shadow: 6px 6px 12px rgba(0, 0, 0, 0.3), -6px -6px 12px rgba(255, 255, 255, 0.4);
 }
 
-.carImage {
+.bikeImage {
   width: 100%;
   height: 120px;
   object-fit: cover;
 }
 
-.carInfo {
+.bikeInfo {
   padding: 10px;
   text-align: center;
 }
 
-.carInfo h3 {
+.bikeInfo h3 {
   font-size: 1.2em;
   margin: 0;
 }
 
-.carInfo p {
+.bikeInfo p {
   font-size: 1em;
   color: #555;
 }

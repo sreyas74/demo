@@ -1,5 +1,5 @@
 .Footer__Top {
-  background-color: #2a2b36;
+  background-color: #656c80;
   color: #fff;
   padding: 4%;
 }
@@ -7,7 +7,7 @@
 .Footer__Top__Cities,
 .Footer__Bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-top: 3%;
 }
 .Footer__Bottom {
@@ -24,46 +24,36 @@
   border: none;
   background: transparent;
   text-align: left;
-  color: grey;
+  color: #fff;
   margin: 2px;
 }
 
 .Footer__Top__Cities__Column > button:hover,
 .Footer__Bottom__Column > button:hover {
-  color: #0ebaba;
+  color: #f39323;
 }
 .Footer__Bottom {
-  background-color: #f4f4f4;
-  color: grey;
+  background-color: #4a4e5a;
+  color: #fff;
   padding: 5%;
 }
 
 .GreenFont {
-  color: #0ebaba;
+  color: white;
 }
 
 .Footer__Bottom__Column__Mid {
-  margin: 10% 0;
+  margin-top: 5%;
 }
 .Footer__Bottom__Column__Mid > button > img {
-  width: 70%;
+  width: 100%;
 }
 .Footer__Bottom__Column__Mid > button {
-  width: 40px;
-  height: 40px;
-  border-radius: 100%;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
   border: none;
   margin: 5px;
-  background-color: white;
+  background-color: grey;
   padding: 3%;
-}
-.Footer__Bottom__Column__Top {
-  position: relative;
-}
-.Footer__Bottom__Column__Top__Text {
-  position: absolute;
-  top: 60px;
-  left: 45px;
-  color: black;
-  font-size: 13px;
 }

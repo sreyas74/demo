@@ -1,5 +1,11 @@
 import React from "react";
 import styles from "./Footer.module.css";
+import logo from "../Dashboard/images/logo2.svg";
+import fb from "../Dashboard/images/fb.svg";
+import instagram from "../Dashboard/images/instagram.svg"
+import x from  "../Dashboard/images/x.svg"
+import youtube from "../Dashboard/images/youtube.svg"
+import linkedin from "../Dashboard/images/linkedin.svg"
 
 // Remove useHistory import since it's not being used
 // import { useHistory } from 'react-router-dom';
@@ -34,69 +40,69 @@ function Footer() {
         <h4>Serviceable Cities</h4>
         <div className={styles.Footer__Top__Cities}>
           <div className={styles.Footer__Top__Cities__Column}>
-            <button>Car Rental in Bengaluru</button>
-            <button>Car Rental in Hydrabad</button>
-            <button>Car Rental in Mumbai</button>
-            <button>Car Rental in Delhi-NCR</button>
-            <button>Car Rental in Chennai</button>
-            <button>Car Rental in Pune</button>
-            <button>Car Rental in Kolkata</button>
-            <button>Car Rental in Ahemdabad</button>
-          </div>
-          <div className={styles.Footer__Top__Cities__Column}>
-            <button>Car Rental in Bhubaneshwar</button>
-            <button>Car Rental in Chandigarh</button>
-            <button>Car Rental in Coimbator</button>
-            <button>Car Rental in Jaipur</button>
             <button>Car Rental in Kochi</button>
-            <button>Car Rental in Mangalore</button>
-            <button>Car Rental in Mysore</button>
-            <button>Car Rental in Nagpur</button>
+            <button>Car Rental in Aluva</button>
+            <button>Car Rental in Ernakulam</button>
+            <button>Car Rental in Angamaly</button>
+            <button>Car Rental in Kakkanad</button>
+            <button>Car Rental in Kottayam</button>
+            <button>Car Rental in Alappuzha</button>
+            <button>Car Rental in Kuttanad</button>
           </div>
           <div className={styles.Footer__Top__Cities__Column}>
-            <button>Car Rental in Surat</button>
-            <button>Car Rental in Tirupati</button>
-            <button>Car Rental in Trivendram</button>
-            <button>Car Rental in Vadodara</button>
-            <button>Car Rental in Vijaywada</button>
-            <button>Car Rental in Vadodara</button>
-            <button>Car Rental in Vizag</button>
+            <button>Car Rental in Thiruvananthapuram</button>
+            <button>Car Rental in Kazhakkoottam</button>
+            <button>Car Rental in Varkala</button>
+            <button>Car Rental in Kollam</button>
+            <button>Car Rental in thrissur</button>
+            <button>Car Rental in Guruvayoor</button>
+            <button>Car Rental in Malappuram</button>
+            <button>Car Rental in Tirur</button>
+          </div>
+          <div className={styles.Footer__Top__Cities__Column}>
+            <button>Car Rental in Kottakal</button>
+            <button>Car Rental in nilambur</button>
+            <button>Car Rental in Kozhikode</button>
+            <button>Car Rental in Wayand</button>
+            <button>Car Rental in Kannur</button>
+            <button>Car Rental in Thalassey</button>
+            <button>Car Rental in Kasargod</button>
           </div>
         </div>
       </div>
       <div className={styles.Footer__Bottom}>
         <div className={styles.Footer__Bottom__Column__One}>
           <div className={styles.Footer__Bottom__Column__Top}>
-            <img src="https://raw.githubusercontent.com/sreyas74/trysample-/68ba0ecbb2e84573d79bca868624b3a6f41c9662/og%20logo%20(14).svg" alt="logo" />
+            <img src={logo} alt="logo" />
           </div>
           <div className={styles.Footer__Bottom__Column__Mid}>
             <button onClick={handleFacebookClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/e88de68fb4786086033c8dff46b96efd546a4b41/fb%2029.svg"
+                src={fb}
                 alt="facebook"
               />
             </button>
             <button onClick={handleInstagramClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/b319b14a208a3c0857c92823da4eb2a5ec1ec812/instu%20(1).svg"
+                src={instagram}
                 alt="instagram"
               />
             </button>
             <button onClick={handleXClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/86176a16775447d9c0593e4c7ed31fdab4269928/twituu%20(1).svg"
+                src={x}
                 alt="x"
               />
             </button>
             <button onClick={handleYoutubeClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/100512e81f82d1d8223b7c01379255fd2abb9f26/yyyu1%20(1).svg"
+                src={youtube}
                 alt="youtube"
               />
             </button>
             <button onClick={handlelinkedinClick}>
               <img
-                src="https://raw.githubusercontent.com/sreyas74/trysample-/273c70061fd0ff18ecaa88d46615e71d33ff6c04/link%20(1).svg"
+                src={linkedin}
                 alt="linkedin"
               />
             </button>
@@ -116,7 +122,7 @@ function Footer() {
           <br />
           <h4 className={styles.GreenFont}>Contact Us</h4>
           <h4 className={styles.GreenFont}>+91-9485555533</h4>
-          <h4 className={styles.GreenFont}> care@revv.co.in</h4>
+          <h4 className={styles.GreenFont}> Support@rydeeasy.com</h4>
         </div>
       </div>
     </div>

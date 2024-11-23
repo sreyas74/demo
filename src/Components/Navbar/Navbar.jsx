@@ -9,6 +9,9 @@ import { TextField } from "@material-ui/core";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { authUser, logoutUser, createUser } from "../../Redux/Auth/action";
+import logo from '../Dashboard/images/logo2.svg';
+import google from "../Dashboard/images/google.png";
+
 
 
 
@@ -45,10 +48,11 @@ const useStyles = makeStyles((theme) => ({
   LoginBtn: {
     marginTop: 50,
     color: "white",
-    width: "40%",
-    backgroundColor: "#0EBABA",
+    width: "25%",
+    backgroundColor: "#FF7300",
     "&:hover": {
-      color: "black",
+      color: "white",
+      backgroundColor: "#FFA500",
     },
   },
 }));
@@ -111,7 +115,7 @@ function Navbar() {
     <div className={styles.Navbar}>
       <div className={styles.Navbar__Logo}>
         <img
-          src="https://raw.githubusercontent.com/sreyas74/trysample-/ee82b1a9baae9faed7df2db279ee785a51ab7869/og%20logo%20(1).svg"
+          src={logo} 
           alt="logo"
           style={{ cursor: "pointer" }}
           onClick={() => history.push("/")}
@@ -128,7 +132,9 @@ function Navbar() {
 >
     How it works
 </button>
-        <button style={{ position: 'relative', left: '150px' }}>FAQs</button>
+
+<button onClick={() => history.push("/Blog")} style={{ position: 'relative', left: '150px' }}>Blog</button>
+        <button  onClick={() => history.push("/FQ")} style={{ position: 'relative', left: '150px' }}>FAQs</button>
         {!toggleLogin ? (
           <>
             <button style={{ position: 'relative', left: '150px' }}onClick={handleOpenLogin}>Login or Signup</button>
@@ -145,7 +151,16 @@ function Navbar() {
               }}
             >
               <Fade in={openLogin}>
-                <div className={classes.papser}>
+                <div className={classes.papser}
+                    style={{
+                      backgroundColor: "white",
+                      padding: "20px",
+                      borderRadius: "10px",
+                      boxShadow: "0 4px 10px rgba(0, 0, 0, 0.2)",
+                      maxWidth: "400px", // Optional: Set a max width for the box
+                      margin: "0 auto", // Center the box horizontally
+                    }}
+                >
                   <h4 id="transition-modal-title">Login</h4>
                   <div className={classes.inputs}>
                     <TextField
@@ -184,7 +199,7 @@ function Navbar() {
                     <Button style={{ position: "relative" }}>
                       {" "}
                       <img
-                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPGc+CgkJPHBvbHlnb24gcG9pbnRzPSI0NDgsMjI0IDQ0OCwxNjAgNDE2LDE2MCA0MTYsMjI0IDM1MiwyMjQgMzUyLDI1NiA0MTYsMjU2IDQxNiwzMjAgNDQ4LDMyMCA0NDgsMjU2IDUxMiwyNTYgNTEyLDIyNCAgICIgZmlsbD0iI2ZmZmZmZiIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiI+PC9wb2x5Z29uPgoJPC9nPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgk8Zz4KCQk8cGF0aCBkPSJNMTYwLDIyNHY2NGg5MC41MjhjLTEzLjIxNiwzNy4yNDgtNDguOCw2NC05MC41MjgsNjRjLTUyLjkyOCwwLTk2LTQzLjA3Mi05Ni05NmMwLTUyLjkyOCw0My4wNzItOTYsOTYtOTYgICAgYzIyLjk0NCwwLDQ1LjAyNCw4LjIyNCw2Mi4xNzYsMjMuMTY4bDQyLjA0OC00OC4yNTZDMjM1LjQyNCwxMDkuODI0LDE5OC40MzIsOTYsMTYwLDk2QzcxLjc3Niw5NiwwLDE2Ny43NzYsMCwyNTYgICAgczcxLjc3NiwxNjAsMTYwLDE2MHMxNjAtNzEuNzc2LDE2MC0xNjB2LTMySDE2MHoiIGZpbGw9IiNmZmZmZmYiIGRhdGEtb3JpZ2luYWw9IiMwMDAwMDAiIHN0eWxlPSIiPjwvcGF0aD4KCTwvZz4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8L2c+PC9zdmc+"
+                        src={google}
                         alt="google"
                         style={{
                           width: "20px",

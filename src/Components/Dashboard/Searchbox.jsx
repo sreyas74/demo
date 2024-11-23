@@ -7,39 +7,19 @@ import DialogTitle from "@material-ui/core/DialogTitle";
 import { useDispatch, useSelector } from "react-redux";
 import { useHistory } from "react-router-dom";
 import { setUserRequest } from "../../Redux/Dashboard/action";
+
 const cities = [
-  {
-    value: "Delhi-NCR",
-    label: "Delhi-NCR",
-  },
-  {
-    value: "Mumbai",
-    label: "Mumbai",
-  },
-  {
-    value: "Bangalore",
-    label: "Bangalore",
-  },
-  {
-    value: "Chennai",
-    label: "Chennai",
-  },
-  {
-    value: "Hydrabad",
-    label: "Hydrabad",
-  },
-  {
-    value: "Pune",
-    label: "Pune",
-  },
-  {
-    value: "Kolkata",
-    label: "Kolkata",
-  },
+  { value: "Kochi", label: "Kochi" },
+  { value: "Aluva", label: "Aluva" },
+  { value: "Tirur", label: "Tirur" },
+  { value: "Edappal", label: "Edappal" },
+  { value: "Thrissur", label: "Thrissur" },
+  { value: "Pune", label: "Pune" },
+  { value: "Kolkata", label: "Kolkata" },
 ];
 
 function Searchbox() {
-  const [city, setCity] = React.useState("Delhi-NCR");
+  const [city, setCity] = React.useState("Kochi");
   const [start_date, setStartDate] = React.useState("");
   const [duration, setDuration] = React.useState(0);
   const [end_date, setEndDate] = React.useState("");
@@ -49,6 +29,7 @@ function Searchbox() {
   const currentDate = new Date();
   const dispatch = useDispatch();
   const history = useHistory();
+
   React.useEffect(() => {
     if (start_date !== "" && end_date !== "") {
       let start = start_date.split("T")[0];
@@ -63,18 +44,18 @@ function Searchbox() {
     }
   }, [start_date, end_date]);
 
-  React.useEffect(() => {
-    handleSubmit();
-  }, [city, start_date, end_date]);
-
-  const handleSubmit = () => {
+  const handleSubmit = React.useCallback(() => {
     const payload = {
       city,
       start_date,
       end_date,
     };
     if (duration >= 0) dispatch(setUserRequest(payload));
-  };
+  }, [city, start_date, end_date, duration, dispatch]);
+
+  React.useEffect(() => {
+    handleSubmit();
+  }, [city, start_date, end_date, handleSubmit]); // Added handleSubmit to dependencies
 
   const handleClickOpen = () => {
     setOpen(true);
@@ -83,6 +64,7 @@ function Searchbox() {
   const handleClose = () => {
     setOpen(false);
   };
+
   return (
     <div className={style.SearchBox}>
       <div className={style.SearchBox__TopRow}>
@@ -125,7 +107,7 @@ function Searchbox() {
 
       <div className={style.SearchBox__MidRow}>
         <img src="https://www.revv.co.in/imgs/logo-rentals.svg" alt="Banner" />
-        <h5>Self drive car rentals in India</h5>
+        <h5>Self drive car rentals in Kerala</h5>
       </div>
 
       <div className={style.SearchBox__Dropdowns}>
@@ -145,7 +127,7 @@ function Searchbox() {
               </Button>
             ))}
           </DialogActions>
-        </Dialog> 
+        </Dialog>
 
         <h5 style={{ color: "grey" }}>City</h5>
         <Button
@@ -186,7 +168,6 @@ function Searchbox() {
                       "-" +
                       currentDate.getDate()
                     }T00:00:00`
-                    
               }
             />
           </div>

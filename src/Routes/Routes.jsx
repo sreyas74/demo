@@ -12,7 +12,10 @@ import { FinalPayment } from "../Pages/payment/FinalPayment";
 import Profile from "../Pages/Profile/Profile";
 import Trail from "../Pages/Dashboard/Trail";
 import Sample from "../Pages/Dashboard/Sample";
-import process from "../Components/Dashboard/Process"
+import process from "../Components/Dashboard/Process";
+import Blog from "../Pages/Dashboard/BlogPage";
+import FQ from "../Pages/Dashboard/FQ"
+
 
 
 const Routes = () => {
@@ -26,6 +29,12 @@ const Routes = () => {
       
         <Route exact path="/sample">
         <Sample/>
+        </Route>
+        <Route exact path="/blog">
+        <Blog/>
+        </Route>
+        <Route exact path="/FQ">
+        <FQ/>
         </Route>
         <Route exact path="/open">
           <Open />
