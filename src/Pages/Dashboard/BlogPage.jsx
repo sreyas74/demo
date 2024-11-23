@@ -27,7 +27,7 @@ const BlogPage = () => {
       <main className={styles.mainContent}>
         <section className={styles.featuredBlog}>
           <div className={styles.blogInfo}>
-            <p className={styles.category}>Car Rental</p>
+            <p className={styles.category}>Car & Bike Rental</p>
             <h1 className={styles.title}>
               Back to History: Unreveling the Mysteries of Alappuzha from Kerala
             </h1>
