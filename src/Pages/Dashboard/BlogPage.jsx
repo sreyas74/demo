@@ -44,8 +44,8 @@ const BlogPage = () => {
           />
         </div>
         <nav className={styles.nav}>
-          <button className={styles.navButton}>Book A Car</button>
-          <button className={styles.navButton}>FAQs</button>
+          <button onClick={() => history.push("")} className={styles.navButton}>Book A Car</button>
+          <button onClick={() => history.push("/FQ")} className={styles.navButton}>FAQs</button>
         </nav>
       </header>
 
