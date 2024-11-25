@@ -5,8 +5,7 @@ import logo from "../../../src/Components/Dashboard/images/logo2.svg";
 import Footer from "../../Components/Dashboard/Footer";
 
 const BlogPage = () => {
-  const History = useHistory();
-
+  let history = useHistory();
   const blogs = [
     {
       id: 1,
@@ -41,7 +40,7 @@ const BlogPage = () => {
             src={logo}
             alt="logo"
             style={{ cursor: "pointer" }}
-            onClick={() => History("/")}
+            onClick={() => history.push("")}
           />
         </div>
         <nav className={styles.nav}>
@@ -60,7 +59,7 @@ const BlogPage = () => {
             <div className={styles.actions}>
               <button
                 className={styles.readButton}
-                onClick={() => History("/blog/alappuzha-history")}
+                onClick={() => history.push("/blog/alappuzha-history")}
               >
                 Read Article →
               </button>
