@@ -69,7 +69,7 @@ const BlogPage = () => {
           </div>
           <div className={styles.blogImage}>
             <img
-              src="https://i.pinimg.com/736x/8b/a3/2b/8ba32b497d9a4a5744556ec8c7209840.jpg"
+              src="https://i.pinimg.com/736x/aa/e6/7d/aae67dd0f076ca2767d987ca0bbbc2b5.jpg"
               alt="Alappuzha"
               className={styles.image}
             />
