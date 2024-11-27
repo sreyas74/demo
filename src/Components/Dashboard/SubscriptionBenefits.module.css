@@ -12,6 +12,7 @@
   position: relative;
   padding-bottom: 10px;
   letter-spacing: 0.5px;
+  margin-top: auto;
 }
 
 .heading::after {
@@ -41,7 +42,7 @@
 }
 
 .boxContainer:hover {
-  transform: translateY(5px);
+  transform: translateY(3px);
 }
 
 /* The container for the bike boxes arranged horizontally */
