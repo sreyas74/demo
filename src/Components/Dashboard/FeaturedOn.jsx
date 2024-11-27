@@ -61,7 +61,7 @@ function FeaturedOn() {
             />
             <h5>
               Mahindra partners Revv to bring subscription-based plan for retail
-              customers
+              customerss
             </h5>
           </div>
         </div>
