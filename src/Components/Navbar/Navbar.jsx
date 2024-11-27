@@ -125,19 +125,19 @@ function Navbar() {
       
       <div className={styles.Navbar__Button__Info}>
     
-        <button onClick={() => history.push("/sample")} style={{ position: 'relative', left: '210px' }}>RydeUp</button>
+        <button onClick={() => history.push("/sample")} >RydeUp</button>
         <button 
     onClick={() => window.location.href = "#howitworks"} 
-    style={{ position: 'relative', left: '210px' }}
+  
 >
     How it works
 </button>
 
-<button onClick={() => history.push("/Blog")} style={{ position: 'relative', left: '210px' }}>Blog</button>
-        <button  onClick={() => history.push("/FQ")} style={{ position: 'relative', left: '210px' }}>FAQs</button>
+<button onClick={() => history.push("/Blog")}>Blog</button>
+        <button  onClick={() => history.push("/FQ")} >FAQs</button>
         {!toggleLogin ? (
           <>
-            <button style={{ position: 'relative', left: '210px' }}onClick={handleOpenLogin}>Login or Signup</button>
+            <button onClick={handleOpenLogin}>Login or Signup</button>
             <Modal
               aria-labelledby="transition-modal-title"
               aria-describedby="transition-modal-description"
@@ -151,7 +151,7 @@ function Navbar() {
               }}
             >
               <Fade in={openLogin}>
-                <div className={classes.papser}
+                <div className={classes.paper}
                     style={{
                       backgroundColor: "white",
                       padding: "20px",

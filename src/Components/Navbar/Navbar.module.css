@@ -34,6 +34,7 @@
   background: transparent;
   border: none;
   outline: none;
+  text-align: right;
 }
 
 .Navbar__Button__Info > button:hover,

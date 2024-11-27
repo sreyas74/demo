@@ -24,10 +24,10 @@ function CarouselBanner() {
       >
         <Carousel.Item
           className={style.CarouselItem}
-          style={{ backgroundColor: "#FFF7E2" }}
+          style={{ backgroundColor: "#FFF7E2"}}
         >
           <img
-            src="https://github.com/sreyas74/trysample-/blob/main/bike1%20(1).jpg?raw=true"
+            src="https://github.com/sreyas74/trysample-/blob/main/car%20and%20family.jpg?raw=true"
             alt="First slide"
           />
         </Carousel.Item>
