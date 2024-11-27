@@ -6,18 +6,20 @@
   
   /* Header Section */
   .header {
+    position: fixed;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 2rem;
+    justify-content: space-evenly;
+    z-index: 100;
     background-color: white;
-    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 65px;
   }
   
   .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #008000; /* Green color for logo */
+    margin-right: auto;
   }
   
   .nav {

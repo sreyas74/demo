@@ -48,6 +48,9 @@ const BlogPage = () => {
           <button onClick={() => history.push("/FQ")} className={styles.navButton}>FAQs</button>
         </nav>
       </header>
+      <br />
+      <br />
+      <br />
 
       <main className={styles.mainContent}>
         <section className={styles.featuredBlog}>

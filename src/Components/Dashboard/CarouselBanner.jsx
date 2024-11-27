@@ -36,7 +36,7 @@ function CarouselBanner() {
           style={{ backgroundColor: "#DDFFEC" }}
         >
           <img
-            src="https://github.com/sreyas74/trysample-/blob/main/car%20and%20family.jpg?raw=true"
+            src="https://raw.githubusercontent.com/sreyas74/trysample-/refs/heads/main/scooty.png"
             alt="Second slide"
           />
         </Carousel.Item>
